@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5bf094d3-153e-41d3-a32b-997892eca185" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -230,11 +229,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522055680050</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="移除 forever">
+      <created>1522060825770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522060825770</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5590000" />
+    <option name="totallyTimeSpent" value="5610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -292,7 +298,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" 添加应用自更新接口" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 添加应用自更新接口" />
+    <MESSAGE value="移除 forever" />
+    <option name="LAST_COMMIT_MESSAGE" value="移除 forever" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
