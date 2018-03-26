@@ -27,6 +27,7 @@ router.all('/wh/listen', function (req, res) {
 });
 
 router.all('/wh/update', function (req, res) {
+    wss.close();
     let index = __dirname.lastIndexOf('WebhookServer');
     let path = __dirname.substr(0, index + 'WebhookServer'.length);
     shell.exec('sh ' + path + '/git_update.sh', (error, stdout, stderr) => {
