@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bf094d3-153e-41d3-a32b-997892eca185" name="Default" comment=" 添加应用自更新接口">
+    <list default="true" id="5bf094d3-153e-41d3-a32b-997892eca185" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/routes/v1.js" afterPath="$PROJECT_DIR$/routes/v1.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -204,7 +203,7 @@
       <workItem from="1522049747409" duration="510000" />
       <workItem from="1522050591193" duration="2164000" />
       <workItem from="1522052966058" duration="1285000" />
-      <workItem from="1522054438877" duration="1235000" />
+      <workItem from="1522054438877" duration="1308000" />
     </task>
     <task id="LOCAL-00001" summary=" 添加应用自更新接口">
       <created>1522055524745</created>
@@ -213,11 +212,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522055524745</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" 添加应用自更新接口">
+      <created>1522055680050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522055680050</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5194000" />
+    <option name="totallyTimeSpent" value="5267000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
