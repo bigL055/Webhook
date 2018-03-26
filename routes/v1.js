@@ -13,11 +13,11 @@ wss.on('connection', function (wsItem) {
 router.all('/wh/listen', function (req, res) {
     if (ws === undefined) {
         res.json({message: "客户端未连接."})
-    }else{
+    } else {
         ws.send(JSON.stringify({
             headers: req.headers,
-            body:req.body
-        }),(err) => {
+            body: req.body
+        }), (err) => {
             if (err) {
                 console.log(`[SERVER] error: ${err}`);
             }
@@ -26,14 +26,22 @@ router.all('/wh/listen', function (req, res) {
     }
 });
 
-router.all('/wh/update',function (req, res) {
+router.all('/wh/update', function (req, res) {
     let index = __dirname.lastIndexOf('WebhookServer');
-    let path = __dirname.substr(0,index + 'WebhookServer'.length);
-    shell.exec('sh ' + path + '/AppUpdate.sh', (error, stdout, stderr) => {
+    let path = __dirname.substr(0, index + 'WebhookServer'.length);
+    shell.exec('sh ' + path + '/git_update.sh', (error, stdout, stderr) => {
         res.json({
             error: error,
             stdout: stdout,
             stderr: stderr
+        })
+
+        shell.exec('sh ' + path + '/app_restart.sh', (error, stdout, stderr) => {
+            console.log(JSON.stringify({
+                error: error,
+                stdout: stdout,
+                stderr: stderr
+            }))
         })
     })
 });
