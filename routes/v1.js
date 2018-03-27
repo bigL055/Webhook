@@ -26,8 +26,12 @@ router.all('/wh/listen', function (req, res) {
     }
 });
 
+var is_updateing = false
 router.all('/wh/update', function (req, res) {
+    if (is_updateing) return;
+    is_updateing = true;
     wss.close();
+    wss.removeAllListeners();
     let index = __dirname.lastIndexOf('WebhookServer');
     let path = __dirname.substr(0, index + 'WebhookServer'.length);
     shell.exec('sh ' + path + '/git_update.sh', (error, stdout, stderr) => {
