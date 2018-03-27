@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-forever restartall
+# forever stopall
+# forever start ./bin/www
